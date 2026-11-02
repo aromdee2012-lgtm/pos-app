@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "build": "electron-builder --win --x64"
+    "build": "electron-builder --win --x64 -p never"
   },
   "build": {
     "appId": "com.pos.app",
     "productName": "TEXAS INTECH POS",
     "win": {
       "icon": "icon.ico",
-      "target": ["nsis"]
+      "target": ["nsis"],
+      "publish": "never"
     },
     "nsis": {
       "oneClick": false,
