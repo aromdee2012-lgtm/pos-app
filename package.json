@@ -8,10 +8,10 @@
   "build": {
     "appId": "com.pos.app",
     "productName": "TEXAS INTECH POS",
+    "publish": ["never"],
     "win": {
       "icon": "icon.ico",
-      "target": ["nsis"],
-      "publish": "never"
+      "target": ["nsis"]
     },
     "nsis": {
       "oneClick": false,
